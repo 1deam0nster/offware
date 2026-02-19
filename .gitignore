@@ -1,0 +1,34 @@
+# Зависимости
+node_modules/
+
+# Сборка Parcel
+.parcel-cache/
+dist/
+
+# Переменные окружения
+.env
+.env.local
+.env.*.local
+
+# Логи и отладочные файлы
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Приватный SSH-ключ (не коммитить)
+reut_key
+
+# Системные и редакторы
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+*.sublime-*
+
+# Временные файлы
+*.tmp
+*.temp
+.cache/
