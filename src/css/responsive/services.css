@@ -1,0 +1,61 @@
+/* Services Page Responsive */
+@media (max-width: 768px) {
+  .services-section {
+    padding: 40px 0;
+  }
+
+  .services-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .services-tabs {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .service-tab {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+
+  .services-content-box {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    gap: 30px;
+  }
+
+  .services-content-title {
+    font-size: 20px;
+  }
+
+  .services-list {
+    gap: 15px;
+  }
+
+  .services-list li {
+    font-size: 16px;
+  }
+
+  .services-workflow-steps {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .services-advantages-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .services-advantage-card {
+    min-height: auto;
+  }
+
+  .services-illustration-placeholder {
+    min-height: 300px;
+    padding: 20px;
+    font-size: 14px;
+  }
+}
+

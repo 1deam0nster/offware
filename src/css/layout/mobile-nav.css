@@ -1,0 +1,214 @@
+/* Mobile Menu Toggle */
+.mobile-menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1001;
+  width: 26px;
+  height: 14px;
+}
+
+.mobile-menu-toggle span {
+  width: 26px;
+  height: 2px;
+  background: white;
+  border-radius: 1px;
+  transition: all 0.3s;
+}
+
+.mobile-menu-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+.mobile-menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-menu-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Mobile Navigation */
+.mobile-nav {
+  display: block;
+  position: fixed;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  max-width: 100vw !important;
+  max-height: 100vh !important;
+  background: var(--color-bg);
+  z-index: 10000;
+  transform: translateX(-100%) !important;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  overflow-y: auto;
+  overflow-x: hidden;
+  visibility: hidden;
+  opacity: 0;
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box;
+  border: none !important;
+  /* Убираем влияние родительского transform */
+  will-change: transform;
+}
+
+.mobile-nav.active {
+  transform: translateX(0) !important;
+  visibility: visible;
+  opacity: 1;
+}
+
+.mobile-nav-close {
+  position: absolute;
+  top: 29px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1001;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  line-height: 0;
+}
+
+.mobile-nav-close svg {
+  width: 18px;
+  height: 18px;
+  display: block;
+  flex-shrink: 0;
+}
+
+.mobile-nav-content {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  padding: 81px 0 0 15px;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  min-height: 100vh;
+}
+
+.mobile-nav-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.mobile-nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: color 0.3s;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.mobile-nav-link.active {
+  color: #59c2ff;
+}
+
+.mobile-nav-link:hover {
+  color: white;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+.mobile-nav-link-with-submenu {
+  cursor: pointer;
+}
+
+.mobile-nav-link-with-submenu .submenu-icon {
+  transition: transform 0.3s;
+}
+
+.mobile-nav-link-with-submenu.active .submenu-icon {
+  transform: rotate(180deg);
+}
+
+.mobile-submenu {
+  display: grid;
+  grid-template-columns: max-content;
+  gap: 45px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, margin-top 0.3s ease;
+  margin-top: 0;
+}
+
+.mobile-submenu.active {
+  max-height: 500px;
+  margin-top: 30px;
+}
+
+.mobile-submenu-link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  transition: color 0.3s;
+}
+
+.mobile-submenu-link:hover {
+  color: #59c2ff;
+}
+
+.mobile-btn-support {
+  position: absolute;
+  left: 15px;
+  top: 647px;
+  width: 345px;
+  max-width: calc(100% - 30px);
+  background: transparent;
+  border: 1px solid #acacac;
+  color: white;
+  padding: 11px 17px;
+  border-radius: 26px;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-align: center;
+}
+
+.mobile-btn-support:hover {
+  background: white;
+  border-color: white;
+  color: #141414;
+}
+
+body.menu-open {
+  overflow: hidden !important;
+  position: fixed !important;
+  width: 100% !important;
+  height: 100% !important;
+  top: 0 !important;
+  left: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+html.menu-open {
+  overflow: hidden !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}

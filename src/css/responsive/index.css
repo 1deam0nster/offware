@@ -1,0 +1,358 @@
+/* Responsive adjustments */
+@media (max-width: 1440px) {
+  .header {
+    width: calc(100% - 160px);
+    max-width: 1280px;
+  }
+
+  .container {
+    padding: 0 36px;
+  }
+}
+
+@media (max-width: 1024px) {
+  /* Планшеты: компактный хедер или бургер, чтобы навигация не ломалась */
+  .header {
+    width: calc(100% - 48px);
+    max-width: none;
+    height: 62px;
+    padding: 0;
+    border-radius: 28px;
+  }
+
+  .header-container {
+    padding: 0 16px 0 20px;
+  }
+
+  .logo {
+    width: 180px;
+    height: 20px;
+  }
+
+  .nav {
+    gap: 28px;
+  }
+
+  .nav-link {
+    font-size: 15px;
+  }
+
+  .btn-support {
+    font-size: 14px;
+    padding: 8px 12px;
+    border-radius: 20px;
+  }
+
+  .nav-submenu {
+    width: 200px;
+  }
+
+  .nav-submenu-link {
+    font-size: 15px;
+    padding: 8px 16px;
+  }
+
+  .products-grid,
+  .achievements-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contacts-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Смартфоны в горизонтальной ориентации (landscape) — компактный хедер */
+@media (orientation: landscape) and (max-height: 500px) {
+  .header {
+    width: calc(100% - 24px);
+    height: 44px;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 22px;
+    backdrop-filter: blur(10px);
+  }
+
+  .header-container {
+    padding: 0 12px;
+  }
+
+  .logo {
+    width: 140px;
+    height: 15.7px;
+  }
+
+  .nav,
+  .btn-support {
+    display: none;
+  }
+
+  .mobile-menu-toggle {
+    display: flex;
+  }
+
+  .mobile-nav {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  /* Header Mobile */
+  .header {
+    width: calc(100% - 30px);
+    height: 50px;
+    left: 15px;
+    right: 15px;
+    top: 14px;
+    transform: none;
+    border-radius: 30px;
+    backdrop-filter: blur(11.494px);
+  }
+
+  .header-container {
+    padding: 0 16px;
+    justify-content: space-between;
+  }
+
+  .logo {
+    width: 158px;
+    height: 17.744px;
+  }
+
+  .logo img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .nav,
+  .btn-support {
+    display: none;
+  }
+
+  .mobile-menu-toggle {
+    display: flex;
+  }
+
+  .mobile-nav {
+    display: block;
+  }
+
+  .products-grid,
+  .achievements-grid,
+  .contacts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .products {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+
+  .btn-primary {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  /* Footer Mobile */
+  .footer {
+    padding: 70px 0 20px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+
+  .footer-logo {
+    width: 158px;
+    height: 17.744px;
+    align-self: flex-start;
+  }
+
+  .footer-columns {
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .footer-column {
+    flex: 1;
+  }
+
+  .footer-column h4 {
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+
+  .footer-column-blog-desktop {
+    display: none;
+  }
+
+  .footer-blog-mobile {
+    display: block;
+    font-size: 15px;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .footer-column ul li {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    padding-top: 20px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero {
+    margin-top: 0;
+    padding-top: 76px;
+  }
+
+  .hero-spline-background {
+    display: none;
+  }
+
+  .hero-background {
+    background-image: url('../../img/hero_background.png');
+    background-size: cover;
+    background-position: center 100px;
+    background-repeat: no-repeat;
+  }
+
+  body {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+  }
+
+  html {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+  }
+
+  .hero-title {
+    font-size: 30px;
+  }
+
+  .hero-subtitle {
+    font-size: 14px;
+  }
+
+  .btn-tag {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+
+  .section-title {
+    font-size: 30px;
+  }
+
+  /* Security Assessment Mobile */
+  .assessment-item {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .assessment-left {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .assessment-main {
+    width: 100%;
+  }
+
+  .assessment-right {
+    width: 100%;
+  }
+
+  .assessment-title {
+    font-size: 24px;
+  }
+
+  .assessment-description {
+    font-size: 14px;
+  }
+
+  .assessment-intro {
+    font-size: 16px;
+  }
+
+  .assessment-list {
+    gap: 15px;
+  }
+
+  .assessment-list li {
+    font-size: 16px;
+  }
+
+  /* Partners Mobile */
+  .partners-header {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .partners-description {
+    max-width: 100%;
+  }
+
+  .carousel-controls {
+    align-self: flex-start;
+  }
+
+  .partners-carousel {
+    grid-template-columns: 1fr;
+  }
+
+  /* Request Form Mobile */
+  .form-wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .form-description {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .contact-form {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Mobile Menu Adaptations */
+  .mobile-btn-support {
+    position: relative;
+    top: auto;
+    margin-top: 120px;
+    width: calc(100% - 30px);
+  }
+
+  .mobile-nav-content {
+    padding-bottom: 100px;
+    min-height: auto;
+  }
+
+  .mobile-nav-close {
+    top: 30px;
+    right: 34px;
+  }
+}

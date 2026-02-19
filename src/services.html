@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги - OFFWARE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css" />
+    <script type="module" src="app.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-container">
+        <a href="index.html" class="logo">
+          <img src="img/logo.svg" alt="OFFWARE Logo">
+        </a>
+        <button class="mobile-menu-toggle" aria-label="Открыть меню">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="nav">
+          <a href="index.html" class="nav-link">Главная</a>
+          <div class="nav-item-with-submenu">
+            <a href="#" class="nav-link nav-link-with-submenu">
+              Продукты
+              <svg width="10" height="5" viewBox="0 0 10 5" fill="none">
+                <path d="M0 0L5 5L10 0" stroke="white" stroke-width="1"/>
+              </svg>
+            </a>
+            <div class="nav-submenu">
+              <a href="offtest.html" class="nav-submenu-link">Продукт OFFTest</a>
+              <a href="offred.html" class="nav-submenu-link">Продукт OFFRed</a>
+              <a href="offtac.html" class="nav-submenu-link">Продукт OFFTac</a>
+            </div>
+          </div>
+          <a href="services.html" class="nav-link">Услуги</a>
+          <a href="blog.html" class="nav-link">Блог</a>
+        </nav>
+        <a href="support.html" class="btn-support">Техническая поддержка</a>
+      </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav">
+      <button class="mobile-nav-close" aria-label="Закрыть меню">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+          <path d="M1 1L17 17M17 1L1 17" stroke="white" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+      <div class="mobile-nav-content">
+        <a href="index.html" class="mobile-nav-link">Главная</a>
+        <div class="mobile-nav-item">
+          <a href="#" class="mobile-nav-link mobile-nav-link-with-submenu" data-submenu="products">
+            Продукты
+            <svg width="10" height="5" viewBox="0 0 10 5" fill="none" class="submenu-icon">
+              <path d="M0 0L5 5L10 0" stroke="white" stroke-width="1"/>
+            </svg>
+          </a>
+          <div class="mobile-submenu" id="products-submenu">
+            <a href="offtest.html" class="mobile-submenu-link">OFFTest</a>
+            <a href="offred.html" class="mobile-submenu-link">OFFRed</a>
+            <a href="offtac.html" class="mobile-submenu-link">OFFTac</a>
+          </div>
+        </div>
+        <a href="services.html" class="mobile-nav-link">Услуги</a>
+        <a href="blog.html" class="mobile-nav-link">Блог</a>
+      </div>
+      <a href="support.html" class="mobile-btn-support">Техническая поддержка</a>
+    </nav>
+
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs">
+      <div class="container">
+        <a href="index.html">Главная</a>
+        <span>/</span>
+        <span class="breadcrumb-current">Услуги</span>
+      </div>
+    </div>
+
+    <!-- Services Section: Infrastructure -->
+    <section class="services-section">
+      <div class="container">
+        <div class="services-header">
+          <div class="services-icon-wrapper">
+            <div class="services-icon">
+              <div class="icon-bg">
+                <img src="img/infrastructura.png" alt="Инфраструктура" class="icon-image">
+              </div>
+            </div>
+          </div>
+          <h2 class="section-title">Инфраструктура</h2>
+        </div>
+        
+        <p class="services-intro">
+          Мы выполняем весь комплекс работ, связанных с оценкой защищенности инфраструктуры и имитируем высококвалифицированных злоумышленников.
+        </p>
+
+        <div class="services-tabs">
+          <button class="service-tab active" data-tab="infrastructure-penetration">Тест на проникновение</button>
+          <button class="service-tab" data-tab="infrastructure-ddos">DDoS тестирование</button>
+          <button class="service-tab" data-tab="infrastructure-wifi">Тестирование Wi-Fi</button>
+        </div>
+
+        <div class="services-content-box" id="infrastructure-penetration-content">
+          <div class="services-content-left">
+            <div class="services-content-section">
+              <h3 class="services-content-title">Цель:</h3>
+              <ul class="services-list">
+                <li><strong>Оценка защищенности</strong> внешнего и внутреннего периметра</li>
+                <li>Повышение уровня защищенности и <strong>детальные рекомендации</strong> по устранению замечаний</li>
+              </ul>
+            </div>
+
+            <div class="services-content-section">
+              <h3 class="services-content-title">Задачи:</h3>
+              <ul class="services-list">
+                <li><strong>Возможность проникновения</strong> извне во <strong>внутреннюю сеть</strong></li>
+                <li>Попытки получения <strong>максимальных привилегий во внутренней сети</strong></li>
+                <li><strong>Получение доступа</strong> к конфиденциальным данным</li>
+              </ul>
+            </div>
+
+            <div class="services-content-section">
+              <h3 class="services-content-title">Форматы работ:</h3>
+              <ul class="services-list">
+                <li><strong>Черный ящик,</strong> без наличия знаний об инфраструктуре</li>
+                <li><strong>Серый ящик,</strong> учетная запись в приложении, сервисе или домене</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="services-content-right">
+            <div class="services-content-section">
+              <h3 class="services-content-title">Выполняемые работы:</h3>
+              <ul class="services-list">
+                <li><strong>Внешний тест на проникновение</strong></li>
+                <li><strong>Внутренний тест на проникновение</strong></li>
+                <li><strong>Поиск критичных уязвимостей</strong> приложений и сервисов</li>
+              </ul>
+            </div>
+
+            <div class="services-content-illustration">
+              <img src="img/services_tab_img1.png" alt="Иллюстрация теста на проникновение" class="services-illustration-image">
+            </div>
+          </div>
+        </div>
+
+        <!-- DDoS тестирование контент -->
+        <div class="services-content-box" id="infrastructure-ddos-content" style="display: none;">
+          <div class="services-content-left">
+            <div class="services-content-section">
+              <h3 class="services-content-title">Цель:</h3>
+              <ul class="services-list">
+                <li><strong>Оценка устойчивости</strong> инфраструктуры к DDoS атакам</li>
+                <li>Проверка эффективности защитных механизмов</li>
+              </ul>
+            </div>
+
+            <div class="services-content-section">
+              <h3 class="services-content-title">Задачи:</h3>
+              <ul class="services-list">
+                <li><strong>Имитация различных типов</strong> DDoS атак</li>
+                <li>Проверка реакции систем защиты</li>
+                <li><strong>Оценка времени восстановления</strong> после атаки</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="services-content-right">
+            <div class="services-content-section">
+              <h3 class="services-content-title">Выполняемые работы:</h3>
+              <ul class="services-list">
+                <li><strong>Тестирование на объемные атаки</strong></li>
+                <li><strong>Тестирование на протокольные атаки</strong></li>
+                <li><strong>Тестирование на прикладные атаки</strong></li>
+              </ul>
+            </div>
+
+            <div class="services-content-illustration">
+              <img src="img/services_tab_img2.png" alt="Иллюстрация DDoS тестирования" class="services-illustration-image">
+            </div>
+          </div>
+        </div>
+
+        <!-- Тестирование Wi-Fi контент -->
+        <div class="services-content-box" id="infrastructure-wifi-content" style="display: none;">
+          <div class="services-content-left">
+            <div class="services-content-section">
+              <h3 class="services-content-title">Цель:</h3>
+              <ul class="services-list">
+                <li><strong>Оценка защищенности</strong> беспроводных сетей</li>
+                <li>Выявление уязвимостей в конфигурации Wi-Fi</li>
+              </ul>
+            </div>
+
+            <div class="services-content-section">
+              <h3 class="services-content-title">Задачи:</h3>
+              <ul class="services-list">
+                <li><strong>Анализ безопасности</strong> точек доступа</li>
+                <li>Проверка шифрования трафика</li>
+                <li><strong>Оценка возможности перехвата</strong> данных</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="services-content-right">
+            <div class="services-content-section">
+              <h3 class="services-content-title">Выполняемые работы:</h3>
+              <ul class="services-list">
+                <li><strong>Сканирование беспроводных сетей</strong></li>
+                <li><strong>Анализ протоколов безопасности</strong></li>
+                <li><strong>Тестирование на проникновение</strong> через Wi-Fi</li>
+              </ul>
+            </div>
+
+            <div class="services-content-illustration">
+              <img src="img/services_tab_img3.png" alt="Иллюстрация тестирования Wi-Fi" class="services-illustration-image">
+            </div>
+          </div>
+        </div>
+
+        <div class="services-divider"></div>
+      </div>
+    </section>
+
+    <!-- Services Section: Employees -->
+    <section class="services-section">
+      <div class="container">
+        <div class="services-header">
+          <div class="services-icon-wrapper">
+            <div class="services-icon">
+              <div class="icon-bg">
+                <img src="img/sotrudniki.png" alt="Сотрудники" class="icon-image">
+              </div>
+            </div>
+          </div>
+          <h2 class="section-title">Сотрудники</h2>
+        </div>
+        
+        <p class="services-intro">
+          Мы выполняем весь комплекс работ, связанных с оценкой защищенности инфраструктуры и имитируем высококвалифицированных злоумышленников.
+        </p>
+
+        <div class="services-tabs">
+          <button class="service-tab" data-tab="employees-phishing">Вредоносные ссылки и письма</button>
+          <button class="service-tab" data-tab="employees-calls">Звонки и физический тест</button>
+          <button class="service-tab" data-tab="employees-usb">Флэш-накопители</button>
+        </div>
+
+        <div class="services-content-box">
+          <div class="services-content-left">
+            <div class="services-content-section">
+              <h3 class="services-content-title">Цель:</h3>
+              <ul class="services-list">
+                <li><strong>Оценка защищенности веб-приложений</strong> и веб-сервисов</li>
+                <li><strong>Повышение уровня защищенности</strong> и детальные рекомендации по устранению замечаний</li>
+              </ul>
+            </div>
+
+            <div class="services-content-section">
+              <h3 class="services-content-title">Задачи:</h3>
+              <ul class="services-list">
+                <li><strong>Возможность получения конфиденциальных данных приложения</strong></li>
+                <li>Попытки получения <strong>максимальных привилегий на уровне операционной системы</strong></li>
+                <li><strong>Получение административного доступа</strong> к приложению</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="services-content-right">
+            <div class="services-content-section">
+              <h3 class="services-content-title">Форматы работ:</h3>
+              <ul class="services-list">
+                <li><strong>Черный ящик,</strong> без наличия знаний о веб-приложении</li>
+                <li><strong>Серый ящик,</strong> учетная запись в приложении</li>
+              </ul>
+            </div>
+
+            <div class="services-content-section">
+              <h3 class="services-content-title">Выполняемые работы:</h3>
+              <ul class="services-list">
+                <li><strong>Анализ защищенности веб-приложения</strong> без учетной записи и с учетной записью</li>
+                <li><strong>Анализ результатов</strong> и подготовка рекомендаций по улучшению защищенности</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="services-divider"></div>
+      </div>
+    </section>
+
+    <!-- Services Section: Applications -->
+    <section class="services-section">
+      <div class="container">
+        <div class="services-header">
+          <div class="services-icon-wrapper">
+            <div class="services-icon">
+              <div class="icon-bg">
+                <img src="img/apps.png" alt="Приложения" class="icon-image">
+              </div>
+            </div>
+          </div>
+          <h2 class="section-title">Приложения</h2>
+        </div>
+        
+        <p class="services-intro">
+          Мы выполняем весь комплекс работ, связанных с оценкой защищенности инфраструктуры и имитируем высококвалифицированных злоумышленников.
+        </p>
+
+        <div class="services-tabs">
+          <button class="service-tab active" data-tab="applications-web">Веб-приложения</button>
+          <button class="service-tab" data-tab="applications-mobile">Мобильные приложения</button>
+          <button class="service-tab" data-tab="applications-code">Исходный код</button>
+        </div>
+
+        <div class="services-content-box">
+          <div class="services-content-left">
+            <div class="services-content-section">
+              <h3 class="services-content-title">Цель:</h3>
+              <ul class="services-list">
+                <li>Оценка защищенности веб-приложений и веб-сервисов</li>
+                <li>Повышение уровня защищенности и детальные рекомендации по устранению замечаний</li>
+              </ul>
+            </div>
+
+            <div class="services-content-section">
+              <h3 class="services-content-title">Задачи:</h3>
+              <ul class="services-list">
+                <li>Возможность получения конфиденциальных данных приложения</li>
+                <li>Попытки получения максимальных привилегий на уровне операционной системы</li>
+                <li>Получение административного доступа к приложению</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="services-content-right">
+            <div class="services-content-section">
+              <h3 class="services-content-title">Форматы работ:</h3>
+              <ul class="services-list">
+                <li>Черный ящик, без наличия знаний о веб-приложении</li>
+                <li>Серый ящик, учетная запись в приложении</li>
+              </ul>
+            </div>
+
+            <div class="services-content-section">
+              <h3 class="services-content-title">Выполняемые работы:</h3>
+              <ul class="services-list">
+                <li>Анализ защищенности веб-приложения без учетной записи и с учетной записью</li>
+                <li>Анализ результатов и подготовка рекомендаций по улучшению защищенности</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How We Work Section -->
+    <section class="services-workflow">
+      <div class="container">
+        <h2 class="section-title">Как мы работаем</h2>
+        
+        <div class="services-workflow-steps">
+          <div class="services-workflow-step">
+            <div class="services-workflow-icon-wrapper">
+              <div class="services-workflow-icon">
+                <img src="img/startup.svg" alt="Icon">
+              </div>
+            </div>
+            <h3 class="services-workflow-title">Анализ проблемы<br>Заказчика</h3>
+            <p class="services-workflow-description">
+              Проводим детальный <strong>анализ проблемы</strong> Заказчика и готовим список мероприятий
+            </p>
+          </div>
+
+          <div class="services-workflow-step">
+            <div class="services-workflow-icon-wrapper">
+              <div class="services-workflow-icon">
+                <img src="img/click.svg" alt="Icon">
+              </div>
+            </div>
+            <h3 class="services-workflow-title">Согласование работ</h3>
+            <p class="services-workflow-description">
+              <strong>Согласуем полный список работ</strong>, контроля и выполнения всех работ проекта
+            </p>
+          </div>
+
+          <div class="services-workflow-step">
+            <div class="services-workflow-icon-wrapper">
+              <div class="services-workflow-icon">
+                <img src="img/server.svg" alt="Icon">
+              </div>
+            </div>
+            <h3 class="services-workflow-title">Выполнение проекта</h3>
+            <p class="services-workflow-description">
+              Выполняем проект с высоким качеством с промежуточным информированием о ходе работ и <strong>согласованием критических действий</strong>
+            </p>
+          </div>
+
+          <div class="services-workflow-step">
+            <div class="services-workflow-icon-wrapper">
+              <div class="services-workflow-icon">
+                <img src="img/finish-flag.svg" alt="Icon">
+              </div>
+            </div>
+            <h3 class="services-workflow-title">Завершение работ</h3>
+            <p class="services-workflow-description">
+              <strong>Готовим отчет с детальными рекомендациями</strong> и проводим демонстрацию для топ-менеджеров и руководителей бизнеса
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Advantages Section -->
+    <section class="services-advantages">
+      <div class="container">
+        <h2 class="section-title">Преимущества работы с нами</h2>
+        
+        <div class="services-advantages-grid">
+          <div class="services-advantage-card">
+            <div class="services-advantage-icon">
+              <img src="img/sotrudniki.png" alt="Icon">
+            </div>
+            <p class="services-advantage-text">
+              <strong>Подтвержденные<br>и квалифицированные специалисты</strong> в области пентеста
+            </p>
+          </div>
+
+          <div class="services-advantage-card">
+            <div class="services-advantage-icon">
+              <img src="img/network-analysis.svg" alt="Icon">
+            </div>
+            <p class="services-advantage-text">
+              <strong>Огромный опыт работы специалистов</strong> команды<br>в области наступательной <strong>кибербезопасности</strong>
+            </p>
+          </div>
+
+          <div class="services-advantage-card">
+            <div class="services-advantage-icon">
+              <img src="img/outline.svg" alt="Icon">
+            </div>
+            <p class="services-advantage-text">
+              <strong>Участие в киберспортивных</strong><br>соревнованиях и CTF
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img src="img/logo.svg" alt="OFFWARE Logo">
+          </div>
+          <div class="footer-columns">
+            <div class="footer-column">
+              <h4>Компания</h4>
+              <h4 class="footer-blog footer-blog-mobile">Блог</h4>
+            </div>
+            <div class="footer-column">
+              <h4>Продукты</h4>
+              <ul>
+                <li><a href="offtest.html" class="footer-link">OFFTest</a></li>
+                <li><a href="offred.html" class="footer-link">OFFRed</a></li>
+                <li><a href="offtac.html" class="footer-link">OFFTac</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h4>Услуги</h4>
+              <ul>
+                <li>Инфраструктура</li>
+                <li>Сотрудники</li>
+                <li>Приложения</li>
+              </ul>
+            </div>
+            <div class="footer-column footer-column-blog-desktop">
+              <h4>Блог</h4>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© OFFWare. Все права защищёны.</p>
+          <div class="footer-links">
+            <a href="#">Публичная оферта</a>
+            <a href="#">Политика конфиденциальности</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+

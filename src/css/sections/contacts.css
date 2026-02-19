@@ -1,0 +1,72 @@
+/* Contacts Section */
+.contacts {
+  background: #000000;
+  background-image: url('../../img/background_contact.png');
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  padding: 80px 0;
+  position: relative;
+  border-radius: 0 0 50px 50px;
+  margin-top: 0;
+}
+
+@media (max-width: 768px) {
+  .contacts {
+    background-image: none;
+  }
+}
+
+.contacts-intro {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.3;
+  color: white;
+  margin-bottom: 40px;
+  max-width: 372px;
+}
+
+.contacts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-label {
+  font-size: 14px;
+  line-height: 1.3;
+  color: white;
+}
+
+.contact-label strong {
+  font-weight: 800;
+}
+
+.contact-btn {
+  background: transparent;
+  border: 1px solid #5f5f5f;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 40px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-align: left;
+  width: auto;
+  display: inline-block;
+  align-self: flex-start;
+}
+
+.contact-btn:hover {
+  border-color: #ffffff;
+  background-color: #ffffff;
+  color: #141414;
+}

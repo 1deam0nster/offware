@@ -1,0 +1,79 @@
+/* Partners Section */
+.partners {
+  background: #141414;
+  padding: 80px 0;
+}
+
+.partners-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 40px;
+  gap: 40px;
+}
+
+.partners-description {
+  font-size: 20px;
+  line-height: 1.2;
+  color: white;
+  margin: 0;
+  max-width: 678px;
+  flex: 1;
+}
+
+.partners-description strong {
+  font-weight: 700;
+}
+
+.partners-carousel {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.partner-placeholder {
+  background: #1b1b1b;
+  height: 108px;
+  border-radius: 8.933px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 18px;
+}
+
+.carousel-controls {
+  display: flex;
+  gap: 10px;
+  flex-shrink: 0;
+  margin-top: 0;
+}
+
+.carousel-btn {
+  width: 45px;
+  height: 45px;
+  padding: 0;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px solid #59c2ff;
+  color: #59c2ff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+.carousel-btn img {
+  display: block;
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+}
+
+.carousel-btn:hover {
+  background: #59c2ff;
+  color: white;
+}

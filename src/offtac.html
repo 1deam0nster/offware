@@ -1,0 +1,595 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OFFTac - OFFWARE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css" />
+    <script type="module" src="app.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-container">
+        <a href="index.html" class="logo">
+          <img src="img/logo.svg" alt="OFFWARE Logo">
+        </a>
+        <button class="mobile-menu-toggle" aria-label="Открыть меню">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="nav">
+          <a href="index.html" class="nav-link">Главная</a>
+          <div class="nav-item-with-submenu">
+            <a href="#" class="nav-link nav-link-with-submenu">
+              Продукты
+              <svg width="10" height="5" viewBox="0 0 10 5" fill="none">
+                <path d="M0 0L5 5L10 0" stroke="white" stroke-width="1"/>
+              </svg>
+            </a>
+            <div class="nav-submenu">
+              <a href="offtest.html" class="nav-submenu-link">Продукт OFFTest</a>
+              <a href="offred.html" class="nav-submenu-link">Продукт OFFRed</a>
+              <a href="offtac.html" class="nav-submenu-link">Продукт OFFTac</a>
+            </div>
+          </div>
+          <a href="services.html" class="nav-link">Услуги</a>
+          <a href="blog.html" class="nav-link">Блог</a>
+        </nav>
+        <a href="support.html" class="btn-support">Техническая поддержка</a>
+      </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav">
+      <button class="mobile-nav-close" aria-label="Закрыть меню">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+          <path d="M1 1L17 17M17 1L1 17" stroke="white" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+      <div class="mobile-nav-content">
+        <a href="index.html" class="mobile-nav-link">Главная</a>
+        <div class="mobile-nav-item">
+          <a href="#" class="mobile-nav-link mobile-nav-link-with-submenu" data-submenu="products">
+            Продукты
+            <svg width="10" height="5" viewBox="0 0 10 5" fill="none" class="submenu-icon">
+              <path d="M0 0L5 5L10 0" stroke="white" stroke-width="1"/>
+            </svg>
+          </a>
+          <div class="mobile-submenu" id="products-submenu">
+            <a href="offtest.html" class="mobile-submenu-link">OFFTest</a>
+            <a href="offred.html" class="mobile-submenu-link">OFFRed</a>
+            <a href="offtac.html" class="mobile-submenu-link">OFFTac</a>
+          </div>
+        </div>
+        <a href="services.html" class="mobile-nav-link">Услуги</a>
+        <a href="blog.html" class="mobile-nav-link">Блог</a>
+      </div>
+      <a href="support.html" class="mobile-btn-support">Техническая поддержка</a>
+    </nav>
+
+    <!-- Hero Wrapper -->
+    <div class="offtest-hero-wrapper offtac-hero-wrapper">
+      <!-- Breadcrumbs -->
+      <div class="breadcrumbs">
+        <div class="container">
+          <a href="index.html">Главная</a>
+          <span>/</span>
+          <a href="#">Продукты</a>
+          <span>/</span>
+          <span class="breadcrumb-current">OFFTac</span>
+        </div>
+      </div>
+
+      <!-- Hero Section -->
+      <section class="offtest-hero offtac-hero">
+      <div class="container">
+        <div class="offtest-hero-content">
+          <div class="offtest-hero-left">
+            <div class="offtest-tags">
+              <span class="tag tag-blue">Blue-Team</span>
+              <span class="tag tag-gray">Руководители</span>
+            </div>
+            <div class="offtest-logo">
+              <img src="img/offtac_logo.svg" alt="OFFTac Logo">
+            </div>
+            <p class="offtest-description">
+              Продукт класса "Breach Attack Simulation", позволяющий оценить насколько средства защиты информации могут справиться с актуальными техниками и атаками злоумышленников и оценить глубину обнаружения атак командой реагирования. <strong>Основная задача системы</strong> - <strong>улучшить процесс обнаружения атак злоумышленников и детектировать их на ранних стадиях обнаружения.</strong>
+            </p>
+            <button class="btn-primary">Получить консультацию</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    </div>
+
+    <!-- Актуальные проблемы -->
+    <section class="offtest-problems">
+      <div class="container">
+        <h2 class="section-title">Актуальные проблемы</h2>
+        
+        <div class="problems-grid">
+          <div class="problem-block">
+            <h3 class="problem-title">Проблемы владельцев активов и ИТ</h3>
+            <ul class="problem-list">
+              <li>
+                <div class="problem-icon">
+                  <img src="img/outline.svg" alt="Icon">
+                </div>
+                <span><strong>Неэффективное распределение бюджета</strong> на кибербезопасность</span>
+              </li>
+              <li>
+                <div class="problem-icon">
+                  <img src="img/icon.svg" alt="Icon">
+                </div>
+                <span><strong>Отсутствие понимания реального уровня защищенности</strong> и противодействия атакам</span>
+              </li>
+              <li>
+                <div class="problem-icon">
+                  <img src="img/settings.svg" alt="Icon">
+                </div>
+                <span><strong>Ограниченность ресурсов</strong> для настройки средств защиты</span>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="problem-block">
+            <h3 class="problem-title">Проблем службы защиты инфраструктуры</h3>
+            <ul class="problem-list">
+              <li>
+                <div class="problem-icon">
+                  <img src="img/cybersecurity-threats.svg" alt="Icon">
+                </div>
+                <span><strong>Недостаточная подготовка</strong> к реальным кибератакам</span>
+              </li>
+              <li>
+                <div class="problem-icon">
+                  <img src="img/data-loss.svg" alt="Icon">
+                </div>
+                <span>Сложность выявления <strong>компроментации на ранних стадиях атаки</strong></span>
+              </li>
+              <li>
+                <div class="problem-icon">
+                  <img src="img/ddos.svg" alt="Icon">
+                </div>
+                <span><strong>Отсутствие постоянных тренировок</strong> без привлечения Red-Team команд</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Решаемые задачи -->
+    <section class="offtest-tasks">
+      <div class="container">
+        <h2 class="section-title">Решаемые задачи</h2>
+        <div class="tasks-grid">
+          <div class="task-card">
+            <div class="task-icon">
+              <img src="img/quarantine.svg" alt="Icon">
+            </div>
+            <h3 class="task-title"><strong>Оценка противодействия атакам злоумышленников</strong></h3>
+            <p class="task-description">Проведение атак на всех этапах проникновения позволяет</p>
+            <button class="btn-expand">
+              <span class="btn-expand-text">Развернуть</span>
+              <img src="img/down.svg" alt="Expand" class="btn-expand-icon">
+            </button>
+          </div>
+          <div class="task-card">
+            <div class="task-icon">
+              <img src="img/problem-solving.svg" alt="Icon">
+            </div>
+            <h3 class="task-title"><strong>Приоритезация угроз и рисков ИБ</strong></h3>
+            <p class="task-description">В ходе проведения работ система определяет уязвимости, которые могут быть использованы злоумышленником</p>
+            <button class="btn-expand">
+              <span class="btn-expand-text">Развернуть</span>
+              <img src="img/down.svg" alt="Expand" class="btn-expand-icon">
+            </button>
+          </div>
+          <div class="task-card">
+            <div class="task-icon">
+              <img src="img/data-leak.svg" alt="Icon">
+            </div>
+            <h3 class="task-title"><strong>Оценка полноты и эффективности принятых защитных мер</strong></h3>
+            <p class="task-description">Система проводит как онлайн, так и оффлайн брутфорс хешей и</p>
+            <button class="btn-expand">
+              <span class="btn-expand-text">Развернуть</span>
+              <img src="img/down.svg" alt="Expand" class="btn-expand-icon">
+            </button>
+          </div>
+          <div class="task-card">
+            <div class="task-icon">
+              <img src="img/data-loss.svg" alt="Icon">
+            </div>
+            <h3 class="task-title"><strong>Тренировка команды реагирования на инциденты</strong></h3>
+            <p class="task-description">За время проведения работ система может получить доступ</p>
+            <button class="btn-expand">
+              <span class="btn-expand-text">Развернуть</span>
+              <img src="img/down.svg" alt="Expand" class="btn-expand-icon">
+            </button>
+          </div>
+          <div class="task-card">
+            <div class="task-icon">
+              <img src="img/cybersecurity-threats.svg" alt="Icon">
+            </div>
+            <h3 class="task-title"><strong>Безопасная имитация атак APT-группировок</strong></h3>
+            <p class="task-description">В ходе проведения работ система определяет уязвимости,</p>
+            <button class="btn-expand">
+              <span class="btn-expand-text">Развернуть</span>
+              <img src="img/down.svg" alt="Expand" class="btn-expand-icon">
+            </button>
+          </div>
+          <div class="task-card">
+            <div class="task-icon">
+              <img src="img/server.svg" alt="Icon">
+            </div>
+            <h3 class="task-title"><strong>Оптимизация настроек средств защиты информации</strong></h3>
+            <p class="task-description">Система проводит как онлайн, так и оффлайн брутфорс хешей и</p>
+            <button class="btn-expand">
+              <span class="btn-expand-text">Развернуть</span>
+              <img src="img/down.svg" alt="Expand" class="btn-expand-icon">
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Последовательность работы -->
+    <section class="offtest-workflow">
+      <div class="container">
+        <h2 class="section-title">Последовательность работы</h2>
+        <div class="workflow-steps">
+          <div class="workflow-step">
+            <div class="workflow-icon-wrapper">
+              <div class="workflow-icon">
+                <img src="img/startup.svg" alt="Icon">
+              </div>
+              <img src="img/line.svg" alt="Connector" class="workflow-connector">
+            </div>
+            <h3 class="workflow-title">Исходные данные</h3>
+            <p class="workflow-description">Пользователь устанавливает агента на типовое рабочее место пользователя и задает формат проверок, например, проверки конечных рабочих станций и почтового сервера</p>
+          </div>
+          <div class="workflow-step">
+            <div class="workflow-icon-wrapper">
+              <div class="workflow-icon">
+                <img src="img/ddos.svg" alt="Icon">
+              </div>
+              <img src="img/line.svg" alt="Connector" class="workflow-connector">
+            </div>
+            <h3 class="workflow-title">Проведение атак</h3>
+            <p class="workflow-description">Система автоматически генерирует различные варианты атак, направленных на заданные области проверок, используя всевозможные вариации, включая безопасные сценарии злоумышленников</p>
+          </div>
+          <div class="workflow-step">
+            <div class="workflow-icon-wrapper">
+              <div class="workflow-icon">
+                <img src="img/network-analysis.svg" alt="Icon">
+              </div>
+              <img src="img/line.svg" alt="Connector" class="workflow-connector">
+            </div>
+            <h3 class="workflow-title">Оценка проведенных атак</h3>
+            <p class="workflow-description">Система оценивает какие виды атак были пропущены средствами защиты информации и какие атаки не были отражены в системах сборах инцидентов</p>
+          </div>
+          <div class="workflow-step">
+            <div class="workflow-icon-wrapper">
+              <div class="workflow-icon">
+                <img src="img/server.svg" alt="Icon">
+              </div>
+              <img src="img/line.svg" alt="Connector" class="workflow-connector">
+            </div>
+            <h3 class="workflow-title">Агрегация результатов и отчетность</h3>
+            <p class="workflow-description">По окончанию проведения атак, система формирует отчетность об успешных и неуспешных атаках, общий скоринг средств защиты</p>
+          </div>
+          <div class="workflow-step">
+            <div class="workflow-icon-wrapper">
+              <div class="workflow-icon">
+                <img src="img/finish-flag.svg" alt="Icon">
+              </div>
+              <img src="img/line.svg" alt="Connector" class="workflow-connector">
+            </div>
+            <h3 class="workflow-title">Приоритезация рисков и повторное тестирование</h3>
+            <p class="workflow-description">Пользователь может ознакомиться с результатами проведенных атак, ознакомиться с приоритезацией рисков и детальной информацией по устранению недостатков. После устранения недостатков, система повторно проверит информацию.</p>
+          </div>
+        </div>
+        <button class="btn-primary btn-center">Получить консультацию</button>
+
+      </div>
+    </section>
+
+    <!-- Возможности системы -->
+    <section class="offtest-capabilities">
+      <div class="container">
+        <h2 class="section-title">Возможности системы</h2>
+        <div class="capabilities-wrapper">
+          <div class="capabilities-tabs">
+            <button class="capability-tab active">Каналы взаимодействия</button>
+            <button class="capability-tab">Имитация атак</button>
+            <button class="capability-tab">Сценарии исполнения</button>
+            <button class="capability-tab">Цепочки атак</button>
+            <button class="capability-tab">Шифрование и защита</button>
+            <button class="capability-tab">Слежение за мимикрией</button>
+            <button class="capability-tab">Адаптивные профили</button>
+          </div>
+          <div class="capabilities-content">
+            <div class="capability-panel active" data-index="0">
+              <div class="capability-chart">
+                <img src="img/offtac_capability.png" alt="Каналы взаимодействия">
+              </div>
+              <div class="capability-text">
+                <h3>Каналы взаимодействия</h3>
+                <p>Разрабатываем и настраиваем различные типы каналов связи между агентом и сервером. Это обеспечивает стабильный обмен данными, высокую отказоустойчивость и гибкость при масштабировании систем.</p>
+              </div>
+            </div>
+            <div class="capability-panel" data-index="1">
+              <div class="capability-chart">
+                <img src="img/offtac_capability.png" alt="Имитация атак">
+              </div>
+              <div class="capability-text">
+                <h3>Имитация атак</h3>
+                <p>Реалистичное моделирование атакующих сценариев для проверки устойчивости инфраструктуры. Оценка реакции систем защиты и выявление слабых мест.</p>
+              </div>
+            </div>
+            <div class="capability-panel" data-index="2">
+              <div class="capability-chart">
+                <img src="img/offtac_capability.png" alt="Сценарии исполнения">
+              </div>
+              <div class="capability-text">
+                <h3>Сценарии исполнения</h3>
+                <p>Гибкая настройка сценариев под различные задачи тестирования. Поддержка различных регламентов и типов проверок.</p>
+              </div>
+            </div>
+            <div class="capability-panel" data-index="3">
+              <div class="capability-chart">
+                <img src="img/offtac_capability.png" alt="Цепочки атак">
+              </div>
+              <div class="capability-text">
+                <h3>Цепочки атак</h3>
+                <p>Построение и отработка многошаговых сценариев атак. Анализ цепочек уязвимостей и приоритизация устранения.</p>
+              </div>
+            </div>
+            <div class="capability-panel" data-index="4">
+              <div class="capability-chart">
+                <img src="img/offtac_capability.png" alt="Шифрование и защита">
+              </div>
+              <div class="capability-text">
+                <h3>Шифрование и защита</h3>
+                <p>Защищённый обмен данными между компонентами системы. Шифрование каналов и обеспечение конфиденциальности.</p>
+              </div>
+            </div>
+            <div class="capability-panel" data-index="5">
+              <div class="capability-chart">
+                <img src="img/offtac_capability.png" alt="Слежение за мимикрией">
+              </div>
+              <div class="capability-text">
+                <h3>Слежение за мимикрией</h3>
+                <p>Контроль поведения агентов и обнаружение аномалий. Выявление попыток маскировки под легитимную активность.</p>
+              </div>
+            </div>
+            <div class="capability-panel" data-index="6">
+              <div class="capability-chart">
+                <img src="img/offtac_capability.png" alt="Адаптивные профили">
+              </div>
+              <div class="capability-text">
+                <h3>Адаптивные профили</h3>
+                <p>Профили тестирования, адаптирующиеся под инфраструктуру заказчика. Персонализация сценариев под специфику окружения.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Преимущества системы -->
+    <section class="offtest-advantages">
+      <div class="container">
+        <h2 class="section-title">Преимущества системы</h2>
+        <div class="advantages-grid">
+          <div class="advantage-card">
+            <div class="advantage-icon">
+              <img src="img/quarantine.svg" alt="Icon">
+            </div>
+            <h3 class="advantage-title"><strong>Покрытие атак по MITRE\ATTACK</strong> и определение слабых мест в средствах защиты информации</h3>
+          </div>
+          <div class="advantage-card">
+            <div class="advantage-icon">
+              <img src="img/global.svg" alt="Icon">
+            </div>
+            <h3 class="advantage-title"><strong>Отсутствие прямого доступа</strong><br>в Интернет</h3>
+          </div>
+          <div class="advantage-card">
+            <div class="advantage-icon">
+              <img src="img/network-analysis.svg" alt="Icon">
+            </div>
+            <h3 class="advantage-title"><strong>Оценка киберрисков и приоритизация устранения недостатков</strong></h3>
+          </div>
+          <div class="advantage-card">
+            <div class="advantage-icon">
+              <img src="img/ddos.svg" alt="Icon">
+            </div>
+            <h3 class="advantage-title">Постоянная тренировка <strong>и улучшение процессов детектирования</strong> и <strong>блокирования атак</strong> на ранних этапах проникновения</h3>
+          </div>
+          <div class="advantage-card">
+            <div class="advantage-icon">
+              <img src="img/infrastructure.svg" alt="Icon">
+            </div>
+            <h3 class="advantage-title"><strong>Запуск как без предварительных настроек</strong>, так и с <strong>детальной конфигурацией</strong></h3>
+          </div>
+          <div class="advantage-card">
+            <div class="advantage-icon">
+              <img src="img/server.svg" alt="Icon">
+            </div>
+            <h3 class="advantage-title"><strong>Прогнозирование угроз и потенциальных атак</strong> на корпоративную инфраструктуру</h3>
+          </div>
+        </div>
+        <button class="btn-primary btn-center">Получить консультацию</button>
+      </div>
+    </section>
+
+    <!-- Форма заявки -->
+    <section class="offtest-form">
+      <div class="container">
+        <h2 class="section-title">Оставить заявку на продукт</h2>
+        <div class="form-tabs">
+          <button class="tab active">Цена</button>
+          <button class="tab">Пилотирование</button>
+        </div>
+        <div class="form-wrapper">
+          <p class="form-intro">Для понимания ценообразования заполните форму и мы вернемся к вам с обратной связью для уточнения деталей пилотирования и предоставления информации по ценовой политике продукта</p>
+          <form class="offtest-contact-form">
+          <div class="form-grid">
+            <input type="text" placeholder="Имя" class="form-input">
+            <input type="email" placeholder="E-mail" class="form-input">
+            <input type="text" placeholder="Телеграм" class="form-input">
+            <input type="text" placeholder="поле для ввода" class="form-input">
+            <input type="text" placeholder="поле для ввода" class="form-input">
+            <input type="text" placeholder="поле для ввода" class="form-input">
+          </div>
+          <div class="form-checkbox">
+            <input type="checkbox" id="privacy-offtac" class="checkbox">
+            <label for="privacy-offtac">Я ознакомлен (-на) и согласен (-на) с <a href="#">Политикой обработки данных</a></label>
+          </div>
+          <button type="submit" class="btn-primary">Отправить</button>
+        </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Документация -->
+    <section class="offtest-docs">
+      <div class="container">
+        <h2 class="section-title">Документация<br>и юридическая информация</h2>
+        <p class="docs-legal">Правообладатель: ООО "ОФФВЕЙР" ИНН</p>
+        <div class="docs-list">
+          <a href="#" class="doc-item">
+            <div class="doc-icon">
+              <img src="img/document.svg" alt="Document">
+            </div>
+            <span>Руководство пользователя.pdf</span>
+          </a>
+          <a href="#" class="doc-item">
+            <div class="doc-icon">
+              <img src="img/document.svg" alt="Document">
+            </div>
+            <span>Инсталяция и эксплуатация.pdf</span>
+          </a>
+          <a href="#" class="doc-item">
+            <div class="doc-icon">
+              <img src="img/document.svg" alt="Document">
+            </div>
+            <span>Руководство администратора.pdf</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="offtest-faq">
+      <div class="container">
+        <div class="faq-wrapper">
+          <div class="faq-intro">
+            <h2 class="section-title">Часто задаваемые вопросы</h2>
+            <p>Что делает OffTac?</p>
+            <p>Offware разрабатывает автоматизированные решения для мониторинга и анализа состояния информационной безопасности. Мы помогаем компаниям своевременно выявлять уязвимости и предотвращать потенциальные угрозы.</p>
+          </div>
+          <div class="faq-list">
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>Чем ваши решения отличаются от стандартных систем защиты?</span>
+                <button type="button" class="faq-toggle" aria-expanded="false">
+                  <img src="img/down.svg" alt="" class="faq-toggle-icon faq-toggle-icon-down">
+                  <img src="img/up.svg" alt="" class="faq-toggle-icon faq-toggle-icon-up">
+                </button>
+              </div>
+              <div class="faq-answer">
+                <p>Наши решения ориентированы на проактивный подход: мы не только выявляем уязвимости, но и помогаем выстроить процессы мониторинга и реагирования с учётом специфики вашей инфраструктуры.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>Кому подходят ваши решения?</span>
+                <button type="button" class="faq-toggle" aria-expanded="false">
+                  <img src="img/down.svg" alt="" class="faq-toggle-icon faq-toggle-icon-down">
+                  <img src="img/up.svg" alt="" class="faq-toggle-icon faq-toggle-icon-up">
+                </button>
+              </div>
+              <div class="faq-answer">
+                <p>Решения подходят компаниям любого масштаба: от среднего бизнеса до крупных предприятий и госструктур, которым важно оценивать и повышать уровень информационной безопасности.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>Можно ли интегрировать ваши системы с уже существующими средствами защиты?</span>
+                <button type="button" class="faq-toggle" aria-expanded="false">
+                  <img src="img/down.svg" alt="" class="faq-toggle-icon faq-toggle-icon-down">
+                  <img src="img/up.svg" alt="" class="faq-toggle-icon faq-toggle-icon-up">
+                </button>
+              </div>
+              <div class="faq-answer">
+                <p>Да, наши продукты поддерживают интеграцию с распространёнными SIEM, системами мониторинга и средствами защиты. Детали интеграции уточняются на этапе внедрения.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-question">
+                <span>Как проходит внедрение?</span>
+                <button type="button" class="faq-toggle" aria-expanded="false">
+                  <img src="img/down.svg" alt="" class="faq-toggle-icon faq-toggle-icon-down">
+                  <img src="img/up.svg" alt="" class="faq-toggle-icon faq-toggle-icon-up">
+                </button>
+              </div>
+              <div class="faq-answer">
+                <p>Внедрение включает анализ инфраструктуры, настройку под ваши задачи, пилотный запуск и обучение специалистов. Сроки и этапы согласовываются индивидуально.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img src="img/logo.svg" alt="OFFWARE Logo">
+          </div>
+          <div class="footer-columns">
+            <div class="footer-column">
+              <h4>Компания</h4>
+              <h4 class="footer-blog footer-blog-mobile">Блог</h4>
+            </div>
+            <div class="footer-column">
+              <h4>Продукты</h4>
+              <ul>
+                <li>OFFTest</li>
+                <li>OFFRed</li>
+                <li>OFFTac</li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h4>Услуги</h4>
+              <ul>
+                <li>Инфраструктура</li>
+                <li>Сотрудники</li>
+                <li>Приложения</li>
+              </ul>
+            </div>
+            <div class="footer-column footer-column-blog-desktop">
+              <h4>Блог</h4>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© OFFWare. Все права защищёны.</p>
+          <div class="footer-links">
+            <a href="#">Публичная оферта</a>
+            <a href="#">Политика конфиденциальности</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

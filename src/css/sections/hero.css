@@ -1,0 +1,102 @@
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #000000;
+}
+
+.hero-spline-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.hero-spline-background spline-viewer {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hero-background::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.5) 35.577%, #000000 100%);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 868px;
+  padding: 0 20px;
+  margin-top: -300px;
+}
+
+.hero-title {
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.hero-subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  color: white;
+  max-width: 722px;
+  margin: 0 auto 30px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-tag {
+  font-family: 'Manrope', sans-serif;
+  background: #252525;
+  border: 1px solid #acacac;
+  color: white;
+  padding: 7px 13px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: default;
+}
+
+.scroll-indicator {
+  position: absolute;
+  right: 8.33%;
+  bottom: 20px;
+  transform: translateX(50%);
+  z-index: 2;
+  opacity: 0.7;
+}
